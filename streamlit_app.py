@@ -39,9 +39,8 @@ Optimización y Entrenamiento:
 Optimizadores: Adam y RMSprop.
 Métricas: Se emplea MSE  para la función de pérdida y se evalúa el desempeño mediante MAE.
 
-st.image("val_mae.png")
-
 """)
+st.image("val_mae.png")
 
 # Títulos y gráficos exploratorios
 st.title("Análisis Exploratorio del Clima")
