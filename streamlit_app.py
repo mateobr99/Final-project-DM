@@ -7,7 +7,7 @@ import gzip
 import pickle
 
 def load_model():
-    filename = "best_model.pkl.gz"
+    filename = "best_model (1).pkl.gz"
     with gzip.open(filename, 'rb') as f:
         model = pickle.load(f)
     return model
