@@ -13,7 +13,7 @@ def load_model():
     return model
     
 # Cargar el modelo
-model = load_model_one()
+model = load_model()
 
 st.title("Predicción de Temperatura")
 
