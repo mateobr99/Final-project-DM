@@ -27,6 +27,30 @@ st.markdown("""
   Velocidad del viento en kilómetros por hora.
 """)
 
+st.markdown("""
+Características del modelo
+
+Activador:
+Optimizador:
+batch: 32
+
+""")
+
+# Títulos y gráficos exploratorios
+st.title("Análisis Exploratorio del Clima")
+
+st.subheader("Matriz de correlación")
+st.image("correlation_matrix.png")
+
+st.subheader("Distribución de Humedad")
+st.image("humidity_distribution.png")
+
+st.subheader("Outliers en variables numéricas")
+st.image("boxplot_Temperature_C.png")
+st.image("boxplot_Humidity_pct.png")
+st.image("boxplot_Wind_Speed_kmh.png")
+
+
 # Cargar el modelo
 def load_best_model():
     filename = "best_model (5).pkl.gz"
