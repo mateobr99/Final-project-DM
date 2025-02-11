@@ -41,7 +41,14 @@ viento = st.slider("Viento (km/h)", min_value=0.0, max_value=50.0, value=10.0)
 precipitaciones = st.slider("Precipitación (mm)", min_value=0.0, max_value=100.0, value=5.0)
 
 # Crear el vector one-hot para la ciudad seleccionada
-selected_city_vector = [1 if city == selected_city else 0 for city in cities_order]
+# Generar el vector one-hot usando un bucle for
+selected_city_vector = []
+for city in cities_order:
+    if city == selected_city:
+        selected_city_vector.append(1)
+    else:
+        selected_city_vector.append(0)
+
 st.write("Vector one-hot:", selected_city_vector)
 
 # Formar el vector de entrada completo (asegúrate de respetar el orden usado en el entrenamiento)
