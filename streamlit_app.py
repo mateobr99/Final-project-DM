@@ -7,7 +7,7 @@ import pandas as pd
 
 # Cargar el modelo
 def load_best_model():
-    filename = "best_model (3).pkl.gz"
+    filename = "best_model (5).pkl.gz"
     with gzip.open(filename, 'rb') as f:
         model = pickle.load(f)
     return model
