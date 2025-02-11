@@ -14,6 +14,10 @@ st.image("correlation_matrix.png")
 st.subheader("Distribución de Humedad")
 st.image("humidity_distribution.png")
 
+st.subheader("Outliers en variables numéricas")
+st.image("boxplot_Temperature_C.png")
+st.image("boxplot_Humidity_pct.png")
+st.image("boxplot_Wind_Speed_kmh.png")
 
 def load_model():
     filename = "best_model (2).pkl.gz"
