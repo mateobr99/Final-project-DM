@@ -5,6 +5,28 @@ import gzip
 import pickle
 import pandas as pd
 
+st.markdown("""
+### Variables del Dataset
+
+- **Location:**  
+  Ubicación o ciudad donde se realizó la medición del clima.
+
+- **Date_Time:**  
+  Fecha y hora en que se tomó la medición.
+
+- **Temperature_C:**  
+  Temperatura medida en grados Celsius.
+
+- **Humidity_pct:**  
+  Porcentaje de humedad en el ambiente.
+
+- **Precipitation_mm:**  
+  Cantidad de precipitación en milímetros.
+
+- **Wind_Speed_kmh:**  
+  Velocidad del viento en kilómetros por hora.
+""")
+
 # Cargar el modelo
 def load_best_model():
     filename = "best_model (5).pkl.gz"
