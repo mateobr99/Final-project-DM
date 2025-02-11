@@ -6,12 +6,12 @@ import streamlit as st
 import gzip
 import pickle
 
-def load_model_one():
-    filename = "best_model.pkl.gz"  
+def load_model():
+    filename = "best_model.pkl.gz"
     with gzip.open(filename, 'rb') as f:
         model = pickle.load(f)
     return model
-
+    
 # Cargar el modelo
 model = load_model_one()
 
