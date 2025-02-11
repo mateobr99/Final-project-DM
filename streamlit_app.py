@@ -40,7 +40,6 @@ Optimizadores: Adam y RMSprop.
 Métricas: Se emplea MSE  para la función de pérdida y se evalúa el desempeño mediante MAE.
 
 """)
-st.image("val_mae.png")
 
 # Títulos y gráficos exploratorios
 st.title("Análisis Exploratorio del Clima")
@@ -97,6 +96,8 @@ input_data = np.array([[humedad, viento, precipitaciones] + selected_city_vector
 st.subheader("Datos de Entrada al Modelo")
 df_input = pd.DataFrame(input_data, columns=['Humedad', 'Viento', 'Precipitación'] + cities_order)
 st.table(df_input)
+
+st.image("val_mae.png")
 
 # Botón para predecir
 if st.button("Predecir Temperatura"):
