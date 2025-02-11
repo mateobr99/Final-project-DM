@@ -27,4 +27,4 @@ input_data = np.array([[humedad, viento, precipitaciones]])
 
 if st.button("Predecir Temperatura"):
     prediccion = model.predict(input_data)
-    st.success(f"Temperatura estimada en {ciudad}: {prediccion[0][0]:.2f}°C")
+    st.success(f"Temperatura estimada: {prediccion[0][0]:.2f}°C")
