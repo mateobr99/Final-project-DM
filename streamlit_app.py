@@ -6,6 +6,12 @@ import streamlit as st
 import gzip
 import pickle
 
+st.title("Análisis Exploratorio del Clima")
+
+st.subheader("Matriz de correlación")
+st.image("correlation_matrix.png")
+
+
 def load_model():
     filename = "best_model (2).pkl.gz"
     with gzip.open(filename, 'rb') as f:
