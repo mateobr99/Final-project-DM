@@ -36,11 +36,10 @@ Capa de Salida: Una única neurona con activación lineal para generar prediccio
 
 Optimización y Entrenamiento:
 
-Optimizadores:  Adam y RMSprop.
-Tasa de Aprendizaje y Batch Size: Ajustados mediante un proceso de búsqueda de hiperparámetros (sweep) que utiliza distribuciones como log_uniform y q_normal.
+Optimizadores: Adam y RMSprop.
 Métricas: Se emplea MSE  para la función de pérdida y se evalúa el desempeño mediante MAE.
 
-st.image("boxplot_Wind_Speed_kmh.png")
+st.image("val_mae.png")
 
 """)
 
