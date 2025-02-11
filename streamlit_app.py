@@ -29,10 +29,18 @@ st.markdown("""
 
 st.markdown("""
 Características del modelo
+Arquitectura del Modelo:
 
-Activador:
-Optimizador:
-batch: 32
+Capas Ocultas: Varias capas densas (entre 2 y 4 según los hiperparámetros) con un número configurable de neuronas (por ejemplo, alrededor de 64 unidades) y activaciones no lineales (tanh o sigmoid, aunque se podría considerar ReLU).
+Capa de Salida: Una única neurona con activación lineal para generar predicciones continuas (temperatura).
+
+Optimización y Entrenamiento:
+
+Optimizadores:  Adam y RMSprop.
+Tasa de Aprendizaje y Batch Size: Ajustados mediante un proceso de búsqueda de hiperparámetros (sweep) que utiliza distribuciones como log_uniform y q_normal.
+Métricas: Se emplea MSE  para la función de pérdida y se evalúa el desempeño mediante MAE.
+
+st.image("boxplot_Wind_Speed_kmh.png")
 
 """)
 
