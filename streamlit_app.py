@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
-from tensorflow.keras.models import load_model as keras_load_model
+from tensorflow.keras.models import load_model
 
 def load_model_one():
     filename = "best_model.pkl.gz"  
-    model = keras_load_model(filename)
+    model = load_model(filename)
     return model
 
 model = load_model_one()
