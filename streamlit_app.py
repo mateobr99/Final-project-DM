@@ -22,9 +22,8 @@ humedad = st.slider("Humedad (%)", min_value=0, max_value=100, value=50)
 viento = st.slider("Viento (km/h)", min_value=0.0, max_value=50.0, value=10.0)
 precipitaciones = st.slider("Precipitación (mm)", min_value=0.0, max_value=100.0, value=5.0)
 
-
-ciudad = st.text_input("Ciudad (opcional)", "Ciudad Desconocida")
-
+ciudades = ["Dallas", "Houston", "New York", "Philadelphia", "San Antonio", "Phoenix", "Chicago", "San Diego", "Los Angeles", "San Jose"]
+ciudad = st.selectbox("Selecciona una ciudad", ciudades)
 
 input_data = np.array([[humedad, viento, precipitaciones]])
 
