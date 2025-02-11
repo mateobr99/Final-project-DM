@@ -27,6 +27,24 @@ st.markdown("""
   Velocidad del viento en kilómetros por hora.
 """)
 
+st.title("Estadísticas Descriptivas del Dataset: Weather Data (Muestra)")
+
+# Función para cargar una muestra del dataset (usando st.cache_data para optimizar)
+@st.cache_data
+def load_sample_data(nrows: int):
+    # Carga solo las primeras nrows (puedes ajustar este valor)
+    df_sample = pd.read_csv("weather_data.csv", nrows=nrows)
+    return df_sample
+
+# Cargar una muestra de 10,000 filas (ajusta este valor según tus necesidades)
+df_sample = load_sample_data(10000)
+
+st.subheader("Vista Previa del Dataset (Muestra)")
+st.dataframe(df_sample.head())
+
+st.subheader("Estadísticas Descriptivas (Muestra)")
+st.dataframe(df_sample.describe())
+
 # Cargar el modelo
 def load_best_model():
     filename = "best_model (5).pkl.gz"
