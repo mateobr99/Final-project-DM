@@ -8,9 +8,11 @@ import pickle
 
 def load_model_one():
     filename = "best_model.pkl.gz"  
-    model = load_model(filename)
+    with gzip.open(filename, 'rb') as f:
+        model = pickle.load(f)
     return model
 
+# Cargar el modelo
 model = load_model_one()
 
 st.title("Predicción de Temperatura")
