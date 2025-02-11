@@ -11,6 +11,9 @@ st.title("Análisis Exploratorio del Clima")
 st.subheader("Matriz de correlación")
 st.image("correlation_matrix.png")
 
+st.subheader("Distribución de Humedad")
+st.image("humidity_distribution.png")
+
 
 def load_model():
     filename = "best_model (2).pkl.gz"
