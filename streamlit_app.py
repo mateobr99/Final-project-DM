@@ -51,6 +51,7 @@ st.subheader("Distribución de Humedad")
 st.image("humidity_distribution.png")
 
 st.subheader("Outliers en variables numéricas")
+
 st.image("boxplot_temperature_by_city.png")
 st.image("boxplot_Humidity_pct.png")
 st.image("boxplot_Wind_Speed_kmh.png")
@@ -58,7 +59,7 @@ st.image("boxplot_Wind_Speed_kmh.png")
 
 # Cargar el modelo
 def load_best_model():
-    filename = "best_model (5).pkl.gz"
+    filename = "best_model (4).pkl.gz"
     with gzip.open(filename, 'rb') as f:
         model = pickle.load(f)
     return model
