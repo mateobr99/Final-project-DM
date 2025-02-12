@@ -31,7 +31,7 @@ st.markdown("""
 Características del modelo
 Arquitectura del Modelo:
 
-Capas Ocultas: Varias capas densas (entre 2 y 4 según los hiperparámetros) con un número configurable de neuronas (por ejemplo, alrededor de 64 unidades) y activaciones no lineales (tanh o sigmoid, aunque se podría considerar ReLU).
+Capas Ocultas: 
 Capa de Salida: Una única neurona con activación lineal para generar predicciones continuas (temperatura).
 
 Optimización y Entrenamiento:
