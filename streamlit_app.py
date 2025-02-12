@@ -52,7 +52,7 @@ st.image("humidity_distribution.png")
 
 st.subheader("Outliers en variables numéricas")
 
-st.image("tenperatura_hist.png")
+st.image("temperatura_hist.png")
 st.image("boxplot_Humidity_pct.png")
 st.image("boxplot_Wind_Speed_kmh.png")
 
