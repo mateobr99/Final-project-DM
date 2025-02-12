@@ -47,9 +47,6 @@ st.title("Análisis Exploratorio del Clima")
 st.subheader("Matriz de correlación")
 st.image("correlation_matrix.png")
 
-st.subheader("Distribución de Humedad")
-st.image("humidity_distribution.png")
-
 st.subheader("Outliers en variables numéricas")
 
 st.image("temperatura_hist.png")
