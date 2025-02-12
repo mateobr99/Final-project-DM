@@ -54,7 +54,7 @@ st.subheader("Outliers en variables numéricas")
 
 st.image("temperatura_hist.png")
 st.image("humedad.png")
-st.image("boxplot_Wind_Speed_kmh.png")
+st.image("vv.png")
 
 
 # Cargar el modelo
